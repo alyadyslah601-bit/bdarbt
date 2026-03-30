@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خدمات الأيدي العاملة | وكالة الرمال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .service-hero {
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark) 100%);
+            color: var(--white);
+            padding: 60px 0;
+        }
+
+        .service-hero h1 {
+            font-size: 40px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .service-content {
+            padding: 60px 0;
+        }
+
+        .breadcrumb {
+            padding: 20px 0;
+        }
+
+        .breadcrumb a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .service-details {
+            background: var(--light-gray);
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 4px solid var(--gold);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .feature-item {
+            background: var(--white);
+            padding: 20px;
+            border-radius: 10px;
+            border-top: 3px solid var(--gold);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-item h4 {
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--gold) 0%, #e5c158 100%);
+            color: var(--black);
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .cta-section .btn {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">وكالة الرمال</div>
+        <div class="loader-circle"></div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>الرمال</h1>
+                <p>للسفر والسياحة</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html#home">الرئيسية</a></li>
+                <li><a href="../index.html#services">الخدمات</a></li>
+                <li><a href="../index.html#packages">العروض</a></li>
+                <li><a href="../index.html#contact">التواصل</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="../booking.html" class="btn btn-primary">احجز الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="../index.html">الرئيسية</a> / <a href="../index.html#services">الخدمات</a> / <span>الأيدي العاملة</span>
+        </div>
+    </div>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <h1>👥 خدمات الأيدي العاملة</h1>
+            <p>توفير العمالة المتخصصة وتسهيل عمليات التوظيف للأفراد والشركات</p>
+        </div>
+    </section>
+
+    <!-- Service Content -->
+    <section class="service-content">
+        <div class="container">
+            <div class="service-details">
+                <h2>عن الخدمة</h2>
+                <p>
+                    تقدم وكالة الرمال خدمات توفير العمالة وتسهيل عمليات التوظيف للأفراد والشركات من خلال نظام احترافي يساعد على إيجاد الكفاءات المناسبة للوظائف المختلفة. نتعامل مع أفضل الكفاءات والعمالة المدربة.
+                </p>
+            </div>
+
+            <h2 style="color: var(--gold); margin: 40px 0 20px;">مميزات خدماتنا</h2>
+            <div class="features-list">
+                <div class="feature-item block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h4>🔍 اختيار دقيق</h4>
+                    <p>فحص شامل واختيار العمالة المناسبة</p>
+                </div>
+                <div class="feature-item block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h4>📚 تدريب متخصص</h4>
+                    <p>تدريب العمالة على أحدث المعايير</p>
+                </div>
+                <div class="feature-item block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h4>📋 توثيق كامل</h4>
+                    <p>جميع الأوراق والتصاريح المطلوبة</p>
+                </div>
+                <div class="feature-item block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h4>💼 تنوع التخصصات</h4>
+                    <p>عمالة متخصصة في مجالات متعددة</p>
+                </div>
+                <div class="feature-item block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h4>🛡️ ضمان الجودة</h4>
+                    <p>ضمان الأداء والالتزام</p>
+                </div>
+                <div class="feature-item block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                    <h4>📞 دعم مستمر</h4>
+                    <p>متابعة وحل المشاكل بسرعة</p>
+                </div>
+            </div>
+
+            <div class="service-details">
+                <h2>التخصصات المتاحة</h2>
+                <h3 style="color: var(--gold); margin-top: 20px;">1. العمالة المنزلية</h3>
+                <p>
+                    عاملات منزليات وعمال نظافة وطهاة وسائقون متخصصون وموثوقون.
+                </p>
+
+                <h3 style="color: var(--gold); margin-top: 20px;">2. العمالة الفنية</h3>
+                <p>
+                    عمال بناء وسباكون وكهربائيون وعمال تشطيب وصيانة.
+                </p>
+
+                <h3 style="color: var(--gold); margin-top: 20px;">3. العمالة الإدارية</h3>
+                <p>
+                    موظفون إداريون وسكرتيريات وموظفو استقبال وموظفو حسابات.
+                </p>
+
+                <h3 style="color: var(--gold); margin-top: 20px;">4. العمالة المتخصصة</h3>
+                <p>
+                    مهندسون وفنيون متخصصون وعمال في مجالات محددة.
+                </p>
+
+                <h3 style="color: var(--gold); margin-top: 20px;">5. العمالة الفندقية</h3>
+                <p>
+                    عمال فنادق وطهاة وخدمة الطعام والشراب.
+                </p>
+            </div>
+
+            <div class="service-details">
+                <h2>خطوات التوظيف</h2>
+                <ol style="list-style-position: inside;">
+                    <li style="padding: 10px 0;">تحديد احتياجاتك والتخصصات المطلوبة</li>
+                    <li style="padding: 10px 0;">البحث والاختيار من قاعدة بيانات العمالة</li>
+                    <li style="padding: 10px 0;">المقابلات والفحوصات الطبية</li>
+                    <li style="padding: 10px 0;">التدريب والتأهيل</li>
+                    <li style="padding: 10px 0;">إعداد العقود والأوراق</li>
+                    <li style="padding: 10px 0;">التسليم والمتابعة</li>
+                </ol>
+            </div>
+
+            <div class="service-details">
+                <h2>الفوائد</h2>
+                <ul style="list-style: none;">
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">✓ توفير الوقت والجهد في البحث عن العمالة</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">✓ ضمان الكفاءة والالتزام</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">✓ توثيق كامل وقانوني</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">✓ دعم مستمر وحل المشاكل</li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">✓ أسعار منافسة وعادلة</li>
+                    <li style="padding: 10px 0;">✓ خبرة طويلة في المجال</li>
+                </ul>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>ابحث عن العمالة المناسبة</h2>
+                <p style="margin-bottom: 20px;">دع وكالة الرمال تساعدك في إيجاد الكفاءات المناسبة</p>
+                <a href="../booking.html" class="btn btn-dark">تقديم طلب</a>
+                <a href="https://wa.me/967784600023" class="btn btn-whatsapp" target="_blank">استفسر الآن</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وكالة الرمال</h4>
+                    <p>متخصصة في تنظيم رحلات الحج والعمرة والسياحة بأفضل الخدمات.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="../index.html">الرئيسية</a></li>
+                        <li><a href="../about.html">من نحن</a></li>
+                        <li><a href="../index.html#services">الخدمات</a></li>
+                        <li><a href="../booking.html">احجز الآن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 وكالة الرمال للسفر والسياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="../script.js"></script>
+</body>
+</html>

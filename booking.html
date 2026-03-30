@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>احجز عمرتك الآن | وكالة الرمال</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .booking-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .booking-form h2 {
+            color: var(--gold);
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid var(--gray);
+            border-radius: 5px;
+            font-family: 'Cairo', sans-serif;
+            font-size: 14px;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, var(--gold) 0%, #e5c158 100%);
+            color: var(--black);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .success-message {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .error-message {
+            background: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .breadcrumb {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .breadcrumb a {
+            color: var(--gold);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">وكالة الرمال</div>
+        <div class="loader-circle"></div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>الرمال</h1>
+                <p>للسفر والسياحة</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">الرئيسية</a></li>
+                <li><a href="index.html#services">الخدمات</a></li>
+                <li><a href="index.html#packages">العروض</a></li>
+                <li><a href="index.html#contact">التواصل</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="index.html" class="btn btn-primary">العودة</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">الرئيسية</a> / <span>احجز عمرتك الآن</span>
+        </div>
+    </div>
+
+    <!-- Booking Form -->
+    <div class="booking-container">
+        <div class="booking-form">
+            <h2>🕌 احجز عمرتك الآن</h2>
+            
+            <div class="success-message" id="successMessage">
+                ✓ شكراً لتسجيلك! سيتواصل معك فريقنا قريباً.
+            </div>
+            
+            <div class="error-message" id="errorMessage">
+                ✗ حدث خطأ. الرجاء المحاولة مرة أخرى.
+            </div>
+
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">الاسم الكامل *</label>
+                    <input type="text" id="name" name="name" required placeholder="أدخل اسمك الكامل">
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">رقم الهاتف *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="9xxxxxxxxx">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">البريد الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">المدينة *</label>
+                        <input type="text" id="city" name="city" required placeholder="مدينتك">
+                    </div>
+                    <div class="form-group">
+                        <label for="pilgrims">عدد المعتمرين *</label>
+                        <select id="pilgrims" name="pilgrims" required>
+                            <option value="">اختر العدد</option>
+                            <option value="1">1 معتمر</option>
+                            <option value="2">2 معتمر</option>
+                            <option value="3">3 معتمرين</option>
+                            <option value="4">4 معتمرين</option>
+                            <option value="5">5 معتمرين</option>
+                            <option value="6">6 معتمرين</option>
+                            <option value="7">7 معتمرين</option>
+                            <option value="8">8 معتمرين</option>
+                            <option value="9">9 معتمرين</option>
+                            <option value="10">10 معتمرين</option>
+                            <option value="10+">أكثر من 10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="package">اختر العرض *</label>
+                    <select id="package" name="package" required>
+                        <option value="">اختر العرض</option>
+                        <option value="10days">عمرة 10 أيام - من 1,500 ريال</option>
+                        <option value="14days">عمرة 14 يوم - من 2,200 ريال</option>
+                        <option value="21days">عمرة 21 يوم - من 3,500 ريال</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="preferredDate">التاريخ المفضل *</label>
+                    <input type="date" id="preferredDate" name="preferredDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">ملاحظات إضافية</label>
+                    <textarea id="message" name="message" placeholder="أي متطلبات خاصة أو أسئلة؟"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">تأكيد الحجز</button>
+
+                <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--gray); text-align: center; color: var(--text-light);">
+                    <p>أو تواصل معنا مباشرة:</p>
+                    <a href="https://wa.me/967784600023" class="btn btn-whatsapp" style="margin-top: 10px;">💬 واتساب</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 60px;">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وكالة الرمال</h4>
+                    <p>متخصصة في تنظيم رحلات الحج والعمرة والسياحة بأفضل الخدمات.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="index.html#services">الخدمات</a></li>
+                        <li><a href="index.html#contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 وكالة الرمال للسفر والسياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const bookingForm = document.getElementById('bookingForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        bookingForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Get form data
+            const formData = {
+                name: document.getElementById('name').value,
+                phone: document.getElementById('phone').value,
+                email: document.getElementById('email').value,
+                city: document.getElementById('city').value,
+                pilgrims: document.getElementById('pilgrims').value,
+                package: document.getElementById('package').value,
+                preferredDate: document.getElementById('preferredDate').value,
+                message: document.getElementById('message').value,
+                timestamp: new Date().toLocaleString('ar-SA')
+            };
+
+            // Validate form
+            if (!formData.name || !formData.phone || !formData.city || !formData.pilgrims || !formData.package || !formData.preferredDate) {
+                errorMessage.style.display = 'block';
+                successMessage.style.display = 'none';
+                setTimeout(() => {
+                    errorMessage.style.display = 'none';
+                }, 5000);
+                return;
+            }
+
+            // Show success message
+            successMessage.style.display = 'block';
+            errorMessage.style.display = 'none';
+
+            // Log data (in production, send to server)
+            console.log('Booking Data:', formData);
+
+            // Reset form
+            bookingForm.reset();
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 5000);
+
+            // Optional: Redirect to WhatsApp with booking details
+            // const whatsappMessage = `مرحباً، أود حجز عمرة:\nالاسم: ${formData.name}\nالهاتف: ${formData.phone}\nالعدد: ${formData.pilgrims}\nالعرض: ${formData.package}`;
+            // window.open(`https://wa.me/967784600023?text=${encodeURIComponent(whatsappMessage)}`);
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

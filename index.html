@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>وكالة الرمال للسفر والسياحة | Hajj & Umrah Services</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">وكالة الرمال</div>
+        <div class="loader-circle"></div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo" data-aos="fade-down" data-aos-duration="800">
+                <h1>وكالة الرمال</h1>
+                <p>للسفر والسياحة</p>
+            </div>
+            <ul class="nav-links" data-aos="fade-down" data-aos-duration="800" data-aos-delay="100">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#packages">العروض</a></li>
+                <li><a href="#why-us">لماذا نختارنا</a></li>
+                <li><a href="#testimonials">آراء العملاء</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+            <div class="nav-buttons" data-aos="fade-down" data-aos-duration="800" data-aos-delay="200">
+                <a href="booking.html" class="btn btn-primary">احجز الآن</a>
+                <a href="https://wa.me/967784600023" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="container" style="display: grid; grid-template-columns: 1.2fr 1fr; align-items: center; gap: 50px; position:relative; z-index: 2;">
+            <div class="hero-content" data-aos="fade-left" data-aos-duration="1000">
+                <h1 class="hero-title">وكالة الرمال للسفر والسياحة</h1>
+                <p class="hero-subtitle"><span class="typed-text"></span></p>
+                <div class="hero-buttons">
+                    <a href="booking.html" class="btn btn-gold">احجز عمرتك الآن <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i></a>
+                    <a href="https://wa.me/967784600023" class="btn btn-outline" target="_blank">تواصل عبر واتساب</a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-overlay-effect"></div>
+                <img src="public/images/kaaba-hero.jpg" alt="الكعبة المشرفة">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section (Counters) -->
+    <section class="stats" id="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon"><i class="fa-solid fa-kaaba"></i></div>
+                    <h3 class="counter" data-target="50000">0</h3>
+                    <p>معتمر وحاج</p>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h3 class="counter" data-target="15">0</h3>
+                    <p>سنوات من الخبرة</p>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-icon"><i class="fa-solid fa-plane"></i></div>
+                    <h3 class="counter" data-target="10000">0</h3>
+                    <p>رحلة سعيدة</p>
+                </div>
+                <div class="stat-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-icon"><i class="fa-solid fa-smile"></i></div>
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>نسبة الرضا (%)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">خدماتنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نقدم مجموعة متكاملة من الخدمات السياحية والحجية مصممة خصيصاً لتلبية احتياجاتك</p>
+            
+            <div class="services-grid">
+                <!-- Service 1: Hajj & Umrah -->
+                <div class="service-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3" data-tilt-scale="1.05" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon"><i class="fa-solid fa-mosque"></i></div>
+                    <h3>الحج والعمرة</h3>
+                    <p>تنظيم رحلات الحج والعمرة بأفضل البرامج والإقامة المميزة بالقرب من الحرم.</p>
+                    <a href="services/hajj-umrah.html" class="service-link">اعرف المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 2: Flight Booking -->
+                <div class="service-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3" data-tilt-scale="1.05" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon"><i class="fa-solid fa-plane-departure"></i></div>
+                    <h3>حجز تذاكر الطيران</h3>
+                    <p>حجز جميع الرحلات الدولية والداخلية بأسعار منافسة وخدمة عملاء ممتازة.</p>
+                    <a href="services/flights.html" class="service-link">اعرف المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 3: Tourism -->
+                <div class="service-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3" data-tilt-scale="1.05" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>السياحة والسفر</h3>
+                    <p>تنظيم رحلات سياحية إلى مختلف الوجهات العالمية مع خدمات متكاملة.</p>
+                    <a href="services/tourism.html" class="service-link">اعرف المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Service 4: Labor Services -->
+                <div class="service-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3" data-tilt-scale="1.05" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>خدمات الأيدي العاملة</h3>
+                    <p>توفير العمالة للشركات والأفراد وتسهيل إجراءات التوظيف بكفاءة عالية.</p>
+                    <a href="services/labor.html" class="service-link">اعرف المزيد <i class="fa-solid fa-arrow-left"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Umrah Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">عروض العمرة</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">اختر العرض المناسب لك وتمتع برحلة روحانية لا تنسى</p>
+            
+            <div class="packages-grid">
+                <!-- Package 1 -->
+                <div class="package-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-scale="1.02" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-header">
+                        <h3>عمرة 10 أيام</h3>
+                        <span class="price">من 1,500 ريال</span>
+                    </div>
+                    <ul class="package-features">
+                        <li>فندق قريب من الحرم</li>
+                        <li>نقل مكيف مريح</li>
+                        <li>إشراف كامل من البداية للنهاية</li>
+                        <li>وجبات يومية</li>
+                        <li>مرشد سياحي متخصص</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-primary btn-block">احجز الآن</a>
+                </div>
+
+                <!-- Package 2 -->
+                <div class="package-card featured" data-aos="fade-up" data-aos-delay="200">
+                    <div class="badge">الأكثر طلباً</div>
+                    <div class="package-header">
+                        <h3>عمرة 14 يوم</h3>
+                        <span class="price">من 2,200 ريال</span>
+                    </div>
+                    <ul class="package-features">
+                        <li>فندق فاخر قريب من الحرم</li>
+                        <li>نقل مكيف مريح</li>
+                        <li>إشراف كامل من البداية للنهاية</li>
+                        <li>وجبات يومية فاخرة</li>
+                        <li>مرشد سياحي متخصص</li>
+                        <li>زيارة المدينة المنورة</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-gold btn-block">احجز الآن</a>
+                </div>
+
+                <!-- Package 3 -->
+                <div class="package-card" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-scale="1.02" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-header">
+                        <h3>عمرة 21 يوم</h3>
+                        <span class="price">من 3,500 ريال</span>
+                    </div>
+                    <ul class="package-features">
+                        <li>فندق فاخر جداً قريب من الحرم</li>
+                        <li>نقل مكيف فاخر</li>
+                        <li>إشراف كامل من البداية للنهاية</li>
+                        <li>وجبات يومية فاخرة</li>
+                        <li>مرشد سياحي متخصص</li>
+                        <li>زيارة المدينة والطائف</li>
+                    </ul>
+                    <a href="booking.html" class="btn btn-primary btn-block">احجز الآن</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">لماذا تختار الرمال</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">معايير احترافية تجعلنا الخيار الأول لرحلتك</p>
+            
+            <div class="why-us-grid">
+                <div class="why-us-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" data-tilt-scale="1.05" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="why-us-icon"><i class="fa-solid fa-star"></i></div>
+                    <h3>خبرة في التنظيم</h3>
+                    <p>سنوات من الخبرة في تنظيم رحلات الحج والعمرة بنجاح وكفاءة عالية لآلاف المعتمرين.</p>
+                </div>
+
+                <div class="why-us-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" data-tilt-scale="1.05" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="why-us-icon"><i class="fa-solid fa-tags"></i></div>
+                    <h3>أسعار منافسة</h3>
+                    <p>نقدم أفضل الأسعار المنافسة مع الالتزام التام بأعلى معايير جودة الخدمات المقدمة.</p>
+                </div>
+
+                <div class="why-us-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" data-tilt-scale="1.05" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="why-us-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>دعم على مدار الساعة</h3>
+                    <p>فريق متخصص جاهز للرد على استفساراتك وتلبية احتياجاتك في أي وقت وطوال فترة الرحلة.</p>
+                </div>
+
+                <div class="why-us-card block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2" data-tilt-scale="1.05" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="why-us-icon"><i class="fa-solid fa-bullseye"></i></div>
+                    <h3>احترافية كاملة</h3>
+                    <p>كل تفاصيل رحلتك مخطط لها بعناية فائقة لضمان تجربة روحانية رائعة ومريحة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">آراء عملائنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نفخر بثقة عملائنا وبتجاربهم المميزة معنا</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">تجربة ممتازة في تنظيم العمرة والخدمة كانت رائعة. كل شيء كان منظماً بشكل احترافي وأفضل مما توقعت.</p>
+                    <p class="testimonial-author">محمد علي</p>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">وكالة موثوقة وتعامل محترم. الفندق كان قريباً جداً من الحرم والتنقلات مريحة. أنصح الجميع بالتعامل معهم.</p>
+                    <p class="testimonial-author">فاطمة أحمد</p>
+                </div>
+
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">خدمة عملاء ممتازة وأسعار منافسة جداً. طاقم العمل متعاون لأبعد الحدود. سأعود معهم مرة أخرى بالتأكيد.</p>
+                    <p class="testimonial-author">سارة محمود</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">تواصل معنا</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">نحن هنا للإجابة على جميع استفساراتك</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3><i class="fa-solid fa-phone"></i> الهاتف</h3>
+                        <p><a href="tel:+967784600023" dir="ltr">+967 784 600 023</a></p>
+                        <p><a href="tel:+967784600024" dir="ltr">+967 784 600 024</a></p>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3><i class="fa-solid fa-location-dot"></i> الموقع</h3>
+                        <p>صنعاء – الجمهورية اليمنية</p>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3><i class="fa-solid fa-envelope"></i> البريد الإلكتروني</h3>
+                        <p><a href="mailto:info@alrimaltravel.com">info@alrimaltravel.com</a></p>
+                    </div>
+
+                    <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3><i class="fa-brands fa-whatsapp"></i> واتساب</h3>
+                        <p><a href="https://wa.me/967784600023" target="_blank">تواصل عبر واتساب سريعاً</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-right" data-aos-delay="200">
+                    <h3>أرسل لنا رسالة</h3>
+                    <form id="contactForm">
+                        <input type="text" placeholder="اسمك الكريم" required>
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                        <input type="tel" placeholder="رقم هاتفك" required>
+                        <textarea placeholder="رسالتك أو استفسارك هنا..." rows="4" required></textarea>
+                        <button type="submit" class="btn btn-gold btn-block" style="border:none">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4>وكالة الرمال</h4>
+                    <p>وكالة رائدة متخصصة في تنظيم رحلات الحج والعمرة والسياحة بأعلى معايير الجودة وأفضل الخدمات لضمان راحة عملائنا.</p>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">الخدمات</a></li>
+                        <li><a href="#packages">العروض الخاصة</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4>تابعنا</h4>
+                    <p>كن على اطلاع دائم بأحدث عروضنا</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 وكالة الرمال للسفر والسياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Vanilla Tilt -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

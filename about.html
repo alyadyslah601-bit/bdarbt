@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن | وكالة الرمال للسفر والسياحة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, var(--black) 0%, var(--dark) 100%);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .about-hero h1 {
+            font-size: 40px;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .about-content {
+            padding: 60px 0;
+        }
+
+        .about-section {
+            margin-bottom: 60px;
+        }
+
+        .about-section h2 {
+            color: var(--gold);
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            color: var(--text-light);
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .mission-vision {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .mission-card,
+        .vision-card {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--gold);
+        }
+
+        .mission-card h3,
+        .vision-card h3 {
+            color: var(--gold);
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .value-card {
+            background: var(--light-gray);
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border-top: 4px solid var(--gold);
+        }
+
+        .value-card h4 {
+            color: var(--dark);
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .value-card p {
+            color: var(--text-light);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .team-member {
+            background: var(--white);
+            border: 2px solid var(--gray);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .team-member:hover {
+            border-color: var(--gold);
+            box-shadow: 0 10px 25px rgba(212, 175, 55, 0.2);
+        }
+
+        .team-member-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .team-member h4 {
+            color: var(--dark);
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            color: var(--gold);
+            font-size: 14px;
+        }
+
+        .breadcrumb {
+            padding: 20px 0;
+        }
+
+        .breadcrumb a {
+            color: var(--gold);
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .mission-vision {
+                grid-template-columns: 1fr;
+            }
+
+            .about-hero h1 {
+                font-size: 28px;
+            }
+
+            .about-section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">وكالة الرمال</div>
+        <div class="loader-circle"></div>
+    </div>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>الرمال</h1>
+                <p>للسفر والسياحة</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">الرئيسية</a></li>
+                <li><a href="index.html#services">الخدمات</a></li>
+                <li><a href="index.html#packages">العروض</a></li>
+                <li><a href="index.html#contact">التواصل</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="booking.html" class="btn btn-primary">احجز الآن</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">الرئيسية</a> / <span>من نحن</span>
+        </div>
+    </div>
+
+    <!-- About Hero -->
+    <section class="about-hero">
+        <div class="container">
+            <h1>من نحن</h1>
+            <p>وكالة الرمال للسفر والسياحة - رحلتك الموثوقة إلى الأماكن المقدسة</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-content">
+        <div class="container">
+            <!-- About Section -->
+            <div class="about-section">
+                <h2>🏢 عن وكالة الرمال</h2>
+                <p>
+                    وكالة الرمال للسفر والسياحة وخدمات الحج والعمرة هي وكالة متخصصة في تنظيم رحلات الحج والعمرة والسفر والسياحة، وتسعى لتقديم أفضل الخدمات لعملائها من خلال خبرة عميقة في مجال السفر وتنظيم الرحلات.
+                </p>
+                <p>
+                    نعمل على توفير برامج عمرة مميزة وحجوزات طيران وفنادق بأفضل الأسعار، بالإضافة إلى تقديم خدمات الأيدي العاملة والتوظيف بما يلبي احتياجات الأفراد والشركات.
+                </p>
+                <p>
+                    منذ تأسيسنا، التزمنا بتقديم خدمات عالية الجودة وموثوقة لآلاف العملاء الراضين عن خدماتنا.
+                </p>
+            </div>
+
+            <!-- Mission and Vision -->
+            <div class="mission-vision">
+                <div class="mission-card">
+                    <h3>🎯 رسالتنا</h3>
+                    <p>
+                        تقديم خدمات سياحية وحجية متكاملة وموثوقة تجعل رحلة العميل تجربة لا تنسى، مع الحفاظ على أعلى معايير الجودة والاحترافية.
+                    </p>
+                </div>
+                <div class="vision-card">
+                    <h3>👁️ رؤيتنا</h3>
+                    <p>
+                        أن نكون الوكالة الأولى والموثوقة في المنطقة لتنظيم رحلات الحج والعمرة والسياحة، مع الحفاظ على رضا العملاء وثقتهم.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Values -->
+            <div class="about-section">
+                <h2>💎 قيمنا الأساسية</h2>
+                <div class="values-grid">
+                    <div class="value-card block-tilt" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <h4>الأمانة والثقة</h4>
+                        <p>نتعامل بصدق وشفافية مع جميع عملائنا</p>
+                    </div>
+                    <div class="value-card block-tilt" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <h4>الجودة العالية</h4>
+                        <p>نسعى لتقديم أفضل الخدمات في كل جانب</p>
+                    </div>
+                    <div class="value-card block-tilt" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <h4>الاحترافية</h4>
+                        <p>فريقنا مدرب ومتخصص في مجال السفر والسياحة</p>
+                    </div>
+                    <div class="value-card block-tilt" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <h4>خدمة العملاء</h4>
+                        <p>رضا العميل هو أولويتنا الأولى</p>
+                    </div>
+                    <div class="value-card block-tilt" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <h4>الابتكار</h4>
+                        <p>نستمر في تطوير خدماتنا لتلبية احتياجات السوق</p>
+                    </div>
+                    <div class="value-card block-tilt" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                        <h4>الاستدامة</h4>
+                        <p>نلتزم بالممارسات السياحية المسؤولة</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Overview -->
+            <div class="about-section">
+                <h2>🌟 خدماتنا</h2>
+                <p>
+                    تقدم وكالة الرمال مجموعة شاملة من الخدمات السياحية والحجية:
+                </p>
+                <ul style="list-style: none; margin: 20px 0;">
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">
+                        <strong>🕌 الحج والعمرة:</strong> برامج متكاملة تشمل الإقامة والنقل والإشراف الكامل
+                    </li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">
+                        <strong>✈️ حجز الطيران:</strong> حجز تذاكر الطيران الدولية والداخلية بأسعار منافسة
+                    </li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">
+                        <strong>🏨 الفنادق والإقامة:</strong> حجز فنادق فاخرة وقريبة من الحرم المكي
+                    </li>
+                    <li style="padding: 10px 0; border-bottom: 1px solid var(--gray);">
+                        <strong>🌍 السياحة والسفر:</strong> رحلات سياحية إلى وجهات عالمية متنوعة
+                    </li>
+                    <li style="padding: 10px 0;">
+                        <strong>👥 خدمات التوظيف:</strong> توفير العمالة وتسهيل إجراءات التوظيف
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Team -->
+            <div class="about-section">
+                <h2>👥 فريقنا</h2>
+                <p>
+                    فريقنا يتكون من متخصصين ومحترفين في مجال السفر والسياحة والخدمات اللوجستية.
+                </p>
+                <div class="team-grid">
+                    <div class="team-member block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="team-member-icon">👔</div>
+                        <h4>مدير عام</h4>
+                        <p>خبرة 15+ سنة</p>
+                    </div>
+                    <div class="team-member block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="team-member-icon">📋</div>
+                        <h4>منسق الرحلات</h4>
+                        <p>متخصص في التنظيم</p>
+                    </div>
+                    <div class="team-member block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="team-member-icon">💼</div>
+                        <h4>مسؤول الحجوزات</h4>
+                        <p>خدمة عملاء ممتازة</p>
+                    </div>
+                    <div class="team-member block-tilt" data-tilt data-tilt-max="15" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.2">
+                        <div class="team-member-icon">🎯</div>
+                        <h4>مرشد سياحي</h4>
+                        <p>معرفة عميقة بالمقدسات</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact CTA -->
+            <div class="about-section" style="background: linear-gradient(135deg, var(--black) 0%, var(--dark) 100%); color: var(--white); padding: 40px; border-radius: 10px; text-align: center;">
+                <h2 style="color: var(--gold);">هل تريد التواصل معنا؟</h2>
+                <p style="color: var(--white); margin-bottom: 20px;">
+                    نحن هنا لمساعدتك في تحقيق حلمك بزيارة الأماكن المقدسة
+                </p>
+                <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                    <a href="booking.html" class="btn btn-gold">احجز الآن</a>
+                    <a href="https://wa.me/967784600023" class="btn btn-whatsapp" target="_blank">واتساب</a>
+                    <a href="index.html#contact" class="btn btn-outline">تواصل معنا</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>وكالة الرمال</h4>
+                    <p>متخصصة في تنظيم رحلات الحج والعمرة والسياحة بأفضل الخدمات.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="index.html#services">الخدمات</a></li>
+                        <li><a href="index.html#packages">العروض</a></li>
+                        <li><a href="booking.html">احجز الآن</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://tiktok.com" target="_blank">TikTok</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 وكالة الرمال للسفر والسياحة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
