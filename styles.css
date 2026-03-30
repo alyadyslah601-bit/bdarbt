@@ -715,7 +715,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact {
     padding: 100px 0;
     background: linear-gradient(135deg, rgba(8, 8, 8, 0.95) 0%, rgba(28, 28, 28, 0.85) 100%),
-                url('public/images/kaaba-night.jpg') center/cover;
+                url('images/kaaba-night.jpg') center/cover;
     background-attachment: fixed;
     color: var(--white);
 }
